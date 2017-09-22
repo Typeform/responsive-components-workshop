@@ -9,7 +9,21 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>My page</title>
+          <title>Welcome to GOV.UK</title>
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <style>
+            {`
+              * {
+                margin: 0;
+                box-sizing: border-box;
+              }
+
+              body {
+                font-family: Arial;
+                -webkit-font-smoothing: antialiased;
+              }
+            `}
+          </style>
           {styleTags}
         </Head>
         <body>
