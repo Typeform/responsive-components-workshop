@@ -20,6 +20,7 @@ export default class MyDocument extends Document {
 
               body {
                 font-family: Arial;
+                color: white;
                 -webkit-font-smoothing: antialiased;
               }
             `}
