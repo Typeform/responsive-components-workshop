@@ -1,13 +1,13 @@
 import React from 'react'
-
 import styled from 'styled-components'
+
+import Spacer from '../components/spacer'
 
 const Root = styled.div``
 
 const Title = styled.p`
   font-size: 12px;
   line-height: 15px;
-  margin-bottom: 5px;
 `
 
 const List = styled.ul`
@@ -28,7 +28,9 @@ const List = styled.ul`
 
 export default () => (
   <Root>
-    <Title>Popular on GOV.UK</Title>
+    <Spacer bottom={0.5}>
+      <Title>Popular on GOV.UK</Title>
+    </Spacer>
     <List>
       <li>
         <a href='#'>Universal Jobmatch job search</a>

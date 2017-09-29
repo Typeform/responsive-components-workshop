@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import PopularPages from '../components/popular-pages'
+import Spacer from '../components/spacer'
 
 const Root = styled.div`
   font-family: Arial;
@@ -17,14 +18,12 @@ const Title = styled.h1`
   font-size: 32px;
   line-height: 35px;
   font-weight: bold;
-  margin-bottom: 15px;
 `
 
 const SubTitle = styled.h1`
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  margin-bottom: 20px;
 `
 
 const SearchInput = styled.input.withConfig({ type: 'text' })`
@@ -35,18 +34,23 @@ const SearchInput = styled.input.withConfig({ type: 'text' })`
   padding-left: 15px;
   padding-right: 15px;
   font-size: 19px;
-  margin-bottom: 30px;
 `
 
 export default () => (
   <Root>
-    <Title>Welcome to GOV.UK</Title>
-    <SubTitle>
-      The best place to find government services and information
-      <br />
-      <strong>Simpler, clearer, faster</strong>
-    </SubTitle>
-    <SearchInput placeholder='Search GOV.UK' />
+    <Spacer bottom={1.5}>
+      <Title>Welcome to GOV.UK</Title>
+    </Spacer>
+    <Spacer bottom={2}>
+      <SubTitle>
+        The best place to find government services and information
+        <br />
+        <strong>Simpler, clearer, faster</strong>
+      </SubTitle>
+    </Spacer>
+    <Spacer bottom={3}>
+      <SearchInput placeholder='Search GOV.UK' />
+    </Spacer>
     <PopularPages />
   </Root>
 )
