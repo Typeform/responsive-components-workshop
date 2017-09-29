@@ -5,9 +5,10 @@ import Panel from './components/panel'
 import Searchbox from './components/searchbox'
 import Spacer from './components/spacer'
 import Text from './components/text'
+import ResponsiveText from './components/responsive-text'
 import WelcomeText from './components/welcome'
 
-export default () => (
+const App = () => (
   <Panel
     color='white'
     bgcolor='#005ea5'
@@ -15,8 +16,8 @@ export default () => (
   >
     <WelcomeText>Welcome to GOV.UK</WelcomeText>
     <Spacer bottom='4' />
-    <Text>The best place to find government services and information</Text>
-    <Text bold>Simpler, clearer, faster</Text>
+    <ResponsiveText>The best place to find government services and information</ResponsiveText>
+    <ResponsiveText bold>Simpler, clearer, faster</ResponsiveText>
     <Spacer bottom='4' />
     <Searchbox placeholder='Search GOV.UK' />
     <Spacer bottom='4' />
@@ -51,3 +52,5 @@ export default () => (
     </List>
   </Panel>
 )
+
+export default App
