@@ -1,0 +1,19 @@
+font size
+  - searchbox input
+  - text
+
+font-weight
+  - text
+
+color
+  - link
+  - text
+
+height
+  - searchbox input
+  - spacer
+
+padding
+  - panel wrapper
+  - searchbox input
+  - list
