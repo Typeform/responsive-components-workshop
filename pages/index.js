@@ -1,28 +1,44 @@
 import React from 'react'
+import Header from './components/header'
+import Link from './components/link'
+import List from './components/list'
+import Panel from './components/panel'
+import Searchbox from './components/searchbox'
+import Spacer from './components/spacer'
+import Text from './components/text'
 
 export default () => (
-  <div>
-    <h1>Welcome to GOV.UK</h1>
-    <p>The best place to find government services and information</p>
-    <p>Simpler, clearer, faster</p>
-    <input type='text' placeholder='Search GOV.UK' />
-    <p>Popular on GOV.UK</p>
-    <ul>
+  <Panel
+    color='white'
+    bgcolor='#005ea5'
+    padding='25px 20px 0 20px'
+  >
+    <Header>Welcome to GOV.UK</Header>
+    <Spacer value='20px' />
+    <Text>The best place to find government services and information</Text>
+    <Text bold>Simpler, clearer, faster</Text>
+    <Spacer value='20px' />
+    <Searchbox placeholder='Search GOV.UK' />
+    <Spacer value='20px' />
+    <Text fontSize='12px'>Popular on GOV.UK</Text>
+    <Spacer value='5px' />
+    <List>
       <li>
-        <a href='#'>Universal Jobmatch job search</a>
+        <Link href='#'>Universal Jobmatch job search</Link>
       </li>
       <li>
-        <a href='#'>Renew vehicle tax</a>
+        <Link href='#'>Renew vehicle tax</Link>
       </li>
       <li>
-        <a href='#'>Log in to student finance</a>
+        <Link href='#'>Log in to student finance</Link>
       </li>
       <li>
-        <a href='#'>Book your theory test</a>
+        <Link href='#'>Book your theory test</Link>
       </li>
       <li>
-        <a href='#'>Personal tax account</a>
+        <Link href='#'>Personal tax account</Link>
       </li>
-    </ul>
-  </div>
+    </List>
+    <Spacer value='20px' />
+  </Panel>
 )
